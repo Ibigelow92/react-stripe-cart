@@ -16,7 +16,7 @@ export function CartProvider({children}) {
 
     function getProductQuantity(id) {
         // The question mark makes it so we don't ask the quantity if it's undefined
-        const quantity = cartProducts.find(product => product.id === id)?.quantity
+        const quantity = cartProducts.find(product => product.id === id)?.quantity;
 
         if (quantity === undefined) {
             return 0;
